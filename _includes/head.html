@@ -1,0 +1,33 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <link rel="publisher" href="https://plus.google.com/107742437891387520759" />
+    <meta name="author" content="{{ site.author }}">
+    <meta name="author-blog" content="{{ site.author-blog }}">
+    <meta name="robots" content="index,follow">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css?v=3.3.4" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/magnific-popup.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="{{ "/js/jquery.magnific-popup.min.js" | prepend: site.baseurl}}"></script>
+
+</head>

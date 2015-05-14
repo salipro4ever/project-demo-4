@@ -1,0 +1,11 @@
+# Site settings
+title: Faircare Demo
+email: your-email@domain.com
+description: Write an awesome description for your new site here.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+author: SaliproPham
+author-blog: "http://admin.blogit.info"
+
+# Build settings
+markdown: kramdown
