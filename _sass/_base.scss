@@ -1,0 +1,234 @@
+/**
+ * Reset some basic elements
+ */
+ body, h1, h2, h3, h4, h5, h6,
+ p, blockquote, pre, hr,
+ dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited, a:hover {
+  color: #FFF;
+}
+
+
+
+/**
+ * Basic styling
+ */
+ body, html {
+  height: 100%;
+}
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+}
+
+.ani-delay {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+
+/**
+ * Images
+ */
+ img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.bold-title {
+  font-size: 1.675em;
+  font-weight: 900;
+  margin: .5em;
+}
+.btn.btn-main {
+  background-color: $main-color;
+  color: #FFF;
+
+  &.btn-big {
+    font-size: 25px;
+    padding: .6em 4em;
+  }   
+}
+.wrapper{
+  margin: 0 auto;
+  &.has-maxwidth {
+    max-width: 800px; 
+  }
+}
+
+.has-bg {
+  background-image: url(../images/faircare-bg.jpg?v=18052015);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+  width: 100%; 
+  color: #FFF;   
+  background-attachment: fixed;
+}
+
+.xs-small {
+  font-size: 0.65em !important;
+}
+
+.has-maxwidth {
+  max-width: 800px;
+}
+
+.lead.no-margin {
+  margin: 0
+}
+
+.weight-normal {
+  font-weight: 400 !important;
+}
+
+
+.sl-main-header {
+  padding: 4.5em; 
+  @media screen and (max-width:768px) {
+    padding: 1.5em 2.5em;
+  } 
+}
+
+.sl-main-content {
+  font-size: 24px;
+  font-weight: 300;
+
+  a, a:link {
+    color: $text-color;
+  }
+  
+
+  @media screen and (max-width:768px) {
+    font-size: 18px;
+
+    h2 {
+      font-size: 1.5em;  
+    }
+  }
+
+  .btn.btn-comfirm-email {
+      margin: 1.2em 0 2em;
+      @media screen and (max-width:768px) {
+        padding: .4em 2em;
+        margin: 1.2em 0 1em;
+      } 
+  }
+
+}
+.sl-main-footer {
+    margin: 2em 0 1em;
+    > .copyright-text {
+     border-top: 1px solid #ccc;
+     padding: 1em;
+     display: inline-block;
+    font-size: 0.75em;
+    opacity: 0.8; 
+     @media screen and (max-width:768px) {
+      font-size: 0.6em;
+    }
+  }
+}
+
+.sl-header {
+  padding: 4.5em 0 3em;
+
+  @media screen and (max-width:768px) {
+    padding: 1.5em 2.5em;
+  }
+}
+.sl-content {
+  font-size: 20px;
+  font-weight: 400;
+  @media screen and (max-width:768px) {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+.frm-confirm {
+  margin: 5px;
+  input.form-control {
+    width: 280px !important;  
+  } 
+}
+.top-color-line {
+  height: 2px;
+  width: 100%;
+  background-color: turquoise;
+}
+
+
+
+
+.showcase-cont {
+  font-size: 20px;
+  font-weight: 300; 
+  margin: 0 0 1em;
+  @media screen and (max-width:768px) {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .xs-center {
+    text-align: center;
+    margin: 0 auto
+  }
+}
+
+
+/**
+* POPUP STYLE
+*/
+.sl-popup {
+  position: relative;
+  background: none;
+  padding: 5px;
+  width: auto;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.sl-popup-topbar {
+  margin-bottom: 5px;
+  text-align: right;
+  > button {
+    border: none;
+    background: transparent;
+    width: 36px;
+    height: 36px;
+    margin-left: 15px;
+    outline: 0;
+    display: inline-block;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.sl-popup-body {
+  background: #FFF;
+  color: $text-color;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  overflow: auto;
+  max-height: 700px;
+}
+
+
+
+
