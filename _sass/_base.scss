@@ -66,7 +66,7 @@ body {
 }
 
 .has-bg {
-  background-image: url(../images/faircare-bg.jpg);
+  background-image: url(../images/faircare-bg.jpg?v=18052015);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -102,7 +102,7 @@ body {
 
 .sl-main-content {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
 
   a, a:link {
     color: $text-color;
@@ -130,10 +130,12 @@ body {
     margin: 2em 0 1em;
     > .copyright-text {
      border-top: 1px solid #ccc;
-     padding: 0.875em;
-     display: inline-block; 
+     padding: 1em;
+     display: inline-block;
+    font-size: 0.75em;
+    opacity: 0.8; 
      @media screen and (max-width:768px) {
-      font-size: 0.75em;
+      font-size: 0.6em;
     }
   }
 }
@@ -160,7 +162,11 @@ body {
     width: 280px !important;  
   } 
 }
-
+.top-color-line {
+  height: 2px;
+  width: 100%;
+  background-color: turquoise;
+}
 
 
 
@@ -214,7 +220,7 @@ body {
 }
 .sl-popup-body {
   background: #FFF;
-  color: #111;
+  color: $text-color;
   padding: 10px;
   border-radius: 5px;
   -webkit-border-radius: 5px;

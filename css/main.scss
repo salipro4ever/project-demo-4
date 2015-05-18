@@ -3,10 +3,24 @@
 ---
 @charset "utf-8";
 
-
+@font-face {
+font-family: 'Avenir';
+font-weight: 300;
+src: local('Avenir LT Std 35 Light'), url('../fonts/AvenirLTStd-Light.woff') format('woff');
+}
+@font-face {
+font-family: 'Avenir';
+font-weight: 400;
+src: local('Avenir LT Std 35 Roman'), url('../fonts/AvenirLTStd-Roman.woff') format('woff');
+}
+@font-face {
+font-family: 'Avenir';
+font-weight: 800;
+src: local('Avenir LT Std 35 Black'), url('../fonts/AvenirLTStd-Black.woff') format('woff');
+}
 
 // Our variables
-$base-font-family: "Lato",Helvetica, Arial, sans-serif;
+$base-font-family: "Avenir",Lato, Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;

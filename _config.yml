@@ -2,7 +2,7 @@
 title: Faircare Demo
 email: your-email@domain.com
 description: Write an awesome description for your new site here.
-baseurl: "/projects-demo-4" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 author: SaliproPham
 author-blog: "http://admin.blogit.info"
