@@ -149,7 +149,7 @@ body {
 }
 .sl-content {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   @media screen and (max-width:768px) {
     font-size: 18px;
     font-weight: 300;
@@ -159,9 +159,7 @@ body {
 .frm-confirm {
   margin: 5px;
   input.form-control {
-    width: 280px !important;
-    color: #000;
-    font-family: sans-serif, arial, tahoma;
+    width: 280px !important;  
   } 
 }
 .top-color-line {
