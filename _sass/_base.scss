@@ -1,9 +1,9 @@
 /**
  * Reset some basic elements
  */
- body, h1, h2, h3, h4, h5, h6,
- p, blockquote, pre, hr,
- dl, dd, ol, ul, figure {
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
@@ -12,14 +12,13 @@ a, a:visited, a:hover {
   color: #FFF;
 }
 
-
-
 /**
  * Basic styling
  */
- body, html {
+body, html {
   height: 100%;
 }
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -35,11 +34,10 @@ body {
   -webkit-animation-delay: 0.2s;
 }
 
-
 /**
  * Images
  */
- img {
+img {
   max-width: 100%;
   vertical-align: middle;
 }
@@ -49,6 +47,7 @@ body {
   font-weight: 900;
   margin: .5em;
 }
+
 .btn.btn-main {
   background-color: $main-color;
   color: #FFF;
@@ -56,12 +55,13 @@ body {
   &.btn-big {
     font-size: 25px;
     padding: .6em 4em;
-  }   
+  }
 }
-.wrapper{
+
+.wrapper {
   margin: 0 auto;
   &.has-maxwidth {
-    max-width: 800px; 
+    max-width: 800px;
   }
 }
 
@@ -71,8 +71,8 @@ body {
   background-size: cover;
   background-position: top center;
   height: 100%;
-  width: 100%; 
-  color: #FFF;   
+  width: 100%;
+  color: #FFF;
   background-attachment: fixed;
 }
 
@@ -92,12 +92,11 @@ body {
   font-weight: 400 !important;
 }
 
-
 .sl-main-header {
-  padding: 4.5em; 
-  @media screen and (max-width:768px) {
+  padding: 4.5em;
+  @media screen and (max-width: 768px) {
     padding: 1.5em 2.5em;
-  } 
+  }
 }
 
 .sl-main-content {
@@ -107,34 +106,34 @@ body {
   a, a:link {
     color: $text-color;
   }
-  
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     font-size: 18px;
 
     h2 {
-      font-size: 1.5em;  
+      font-size: 1.5em;
     }
   }
 
   .btn.btn-comfirm-email {
-      margin: 1.2em 0 2em;
-      @media screen and (max-width:768px) {
-        padding: .4em 2em;
-        margin: 1.2em 0 1em;
-      } 
+    margin: 1.2em 0 2em;
+    @media screen and (max-width: 768px) {
+      padding: .4em 2em;
+      margin: 1.2em 0 1em;
+    }
   }
 
 }
+
 .sl-main-footer {
-    margin: 2em 0 1em;
-    > .copyright-text {
-     border-top: 1px solid #ccc;
-     padding: 1em;
-     display: inline-block;
+  margin: 2em 0 1em;
+  > .copyright-text {
+    border-top: 1px solid #ccc;
+    padding: 1em;
+    display: inline-block;
     font-size: 0.75em;
-    opacity: 0.8; 
-     @media screen and (max-width:768px) {
+    opacity: 0.8;
+    @media screen and (max-width: 768px) {
       font-size: 0.6em;
     }
   }
@@ -143,14 +142,15 @@ body {
 .sl-header {
   padding: 4.5em 0 1em;
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     padding: 1.5em 2.5em 0.8em;
   }
 }
+
 .sl-content {
   font-size: 20px;
   font-weight: 300;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     font-size: 18px;
     font-weight: 300;
   }
@@ -159,44 +159,40 @@ body {
 .frm-confirm {
   margin: 5px;
   input.form-control {
-    width: 280px !important;  
-  } 
+    width: 280px !important;
+  }
 }
+
 .top-color-line {
   height: 2px;
   width: 100%;
   background-color: turquoise;
 }
 
-
-
-
 .showcase-cont {
   font-size: 20px;
-  font-weight: 300; 
+  font-weight: 300;
   margin: 0 0 1em;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     font-size: 18px;
     font-weight: 300;
   }
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .xs-center {
     text-align: center;
     margin: 0 auto
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
 }
-
 
 /**
 * POPUP STYLE
@@ -209,6 +205,7 @@ body {
   max-width: 600px;
   margin: 20px auto;
 }
+
 .sl-popup-topbar {
   margin-bottom: 5px;
   text-align: right;
@@ -226,6 +223,7 @@ body {
     }
   }
 }
+
 .sl-popup-body {
   background: #FFF;
   color: $text-color;
@@ -237,6 +235,357 @@ body {
   max-height: 700px;
 }
 
+/**************************
+* HOMEPAGE STYLE
+*
+* update 29-07-2015
+**************************/
+@media (max-width:767px){.text-center-xs{text-align: center!important}}
+.spacer {
+  display: inline-block;
+  min-width: 1px;
+  min-height: 1px;
+  &.spacer-h50 {
+    height: 50px;
+  }
+}
 
+.btn {
+  &.btn-md {
+    font-size: 20px;
+    padding: .5em 2em;
+  }
+}
 
+body.has-banner {
+  background-image: url(../images/faircareio-banner-bg-2907.jpg);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: top center;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  background-color: #8993ad;
+  background-attachment: fixed !important;
+}
+
+.text {
+  &.text-md {
+    font-size: 1.5em;
+  }
+  &.text-big {
+    font-size: 2em;
+  }
+}
+
+.sprite {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.sprite-arrow-down {
+  background-image: url(../images/faircareio-arrow-down.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.bg-white {
+  background-color: #FFFFFF !important;
+  color: #444;
+}
+
+.bg-gray {
+  background-color: #F6F6F6 !important;
+  color: #444;
+}
+
+.bg-dark {
+  background-color: #454f5e !important;
+  color: #C3C3C3;
+}
+
+.p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.half-rule {
+  width: 150px;
+  margin: 40px auto;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee
+}
+
+.section {
+  padding: 50px 0;
+  overflow: hidden;
+
+  .sl-list {
+    padding: 5px 20px;
+    text-align: left;
+  }
+}
+
+/****/
+
+.has-banner header {
+  height: 730px;
+  position: relative;
+
+  .arrow-cont {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px){
+  .has-banner header {
+    height: 500px;
+
+    .sl-header {
+      & > img:first-child {
+        height: 60px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+}
+
+.sl-nav {
+  border-bottom: 2px solid #DDD;
+  border-bottom: 2px solid #DDD;
+  margin-bottom: 0;
+
+  .nav > li {
+    margin: 0px 15px;
+  }
+  .nav > li > a {
+    padding: 25px 5px;
+    line-height: 20px;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+  }
+  .nav > li:first-child {
+    margin-left: 0;
+  }
+  .nav > li > a:hover, .nav > li.active > a {
+    color: #222;
+    font-weight: 400;
+    border-bottom: 2px solid #222;
+    background: none;
+  }
+
+  .navbar-brand {
+    padding: 25px 15px;
+    line-height: 20px;
+    color: #333;
+    height: 70px;
+  }
+  .navbar-toggle {
+    padding: 19px 20px;
+  }
+  .collapse.navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  @media (max-width: 767px) {
+    .nav > li > a, .nav > li > a:hover, .nav > li.active > a {
+      padding: 15px 5px;
+      border-bottom: 0;
+    }
+    .nav > li > a:hover, .nav > li.active > a {
+      background: #EEE;
+
+    }
+    .nav > li:first-child {
+      margin-left: 15px;
+    }
+    .collapse.navbar-collapse {
+      background-color: #FBFBFB;
+    }
+  }
+
+}
+.feature-item {
+  padding: 15px 10px 25px;
+  @include transition(all .5s ease);
+
+  .feature-icon > span {
+    background-image: url(../images/faircareio-features-sprite-2907.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 128px;
+    height: 128px;
+    @include transition(all .3s ease);
+    &.one {
+      background-position: 0 0;
+    }
+    &.two {
+      background-position: 0 -130px;
+    }
+    &.three {
+      background-position: 0 -260px;
+    }
+  }
+
+  .feature-end {
+    margin-top: 40px;
+    a, a:active {
+      color: #444;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: $main-color;
+    }
+  }
+
+  &:hover {
+    //box-shadow: 0 0 10px 0px #CECCCC;
+    //background-color: lighten(#F6F6F6,1);
+    cursor: pointer;
+
+    .feature-icon > span {
+
+      &.one {
+        background-position: -132px 0;
+      }
+      &.two {
+        background-position: -132px -130px;
+      }
+      &.three {
+        background-position: -132px -260px;
+      }
+
+    }
+
+  }
+}
+
+.section-3 {
+  background-image: url(../images/faircareio-screenshot-app-2907.jpg);
+  height: 500px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+}
+
+.sl-thumbnail {
+  max-width: 300px;
+  margin: 20px auto;
+  border: 0;
+  background: none;
+
+  .caption {
+    padding: 15px 0 9px;
+    color: #C3C3C3;
+
+    & > p {
+      margin-top: 0;
+    }
+  }
+}
+
+.sl-social {
+  margin-top: 20px;
+}
+
+.sl-social-item {
+  background-image: url(../images/faircareio-socials-icon-2907.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 60px;
+  width: 55px;
+  display: inline-block;
+  text-indent: -9999px;
+  color: transparent;
+  margin: 10px;
+  &.fb {
+    background-position: 0 0;
+  }
+  &.tw {
+    background-position: -68px 0;
+  }
+  &.in {
+    background-position: -136px 0;
+  }
+  &:hover {
+    background-position-y: -60px;
+  }
+}
+
+.sl-footer {
+  border-top: 1px solid #DDD;
+  position: relative;
+  padding-bottom: 15px;
+  overflow: visible;
+}
+#toTop {
+  background-image: url(../images/faircareio-arrow-totop.png);
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  top: -25px;
+  right: 20%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 #CCC;
+    -webkit-box-shadow: 0 0 10px 0 #CCC;
+  }
+}
+.magic-item {
+  display: inline-block;
+}
+.magic-position {
+  position: relative;
+}
+.overlay-loader {
+  background: #51586B;
+  display: table;
+  height: 100%;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  .ball-beat {
+    backface-visibility: hidden;
+    display: table-cell;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+.done .overlay-loader {
+  opacity: 0;
+  visibility: hidden;
+}
 

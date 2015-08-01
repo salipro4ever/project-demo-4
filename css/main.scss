@@ -29,8 +29,14 @@ $text-color:       #454f5e;
 $background-color: #FFFFFF;
 $main-color:      #4ac0be;
 
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "base"
-;
+@import "base";
