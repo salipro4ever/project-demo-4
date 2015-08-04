@@ -6,13 +6,14 @@
 
 /* PARALLAX
  ========================================================*/
-(function($){
+(function ($) {
    $(function () {
       //pararel header
-      var $wd = $(window), $wr = $('#parallax-bg1'), $bh = ($.browser.webkit) ? $('body') : $('html'); var tm= $wr.offset() && $wr.offset().top;
+      var $wd = $(window), $wr = $('#parallax-bg1'), $bh = ($.browser.webkit) ? $('body') : $('html');
+      var tm = $wr.offset() && $wr.offset().top;
       $wd.bind('scroll.site', function () {
          var st = $bh.scrollTop() + $wd.height();
-         if(st > (tm + 150)) {
+         if (st > (tm + 150)) {
             var top = -(st - tm) / 5;
             top = (top > 0) ? 0 : ((top < -200) ? -200 : top);
             $wr.css({
@@ -81,6 +82,11 @@
                {opacity: 1, right: 0},
                {opacity: 0, right: -300}))
             .addTo(controller);
+         new ScrollMagic.Scene({
+            triggerElement: "#section5", duration: 500, offset: 0
+         }).setTween(TweenMax.fromTo("#magicItem2b", 1,
+               {top: 0},
+               {top: 200})).addTo(controller);
          // e3
          new ScrollMagic.Scene({
             triggerElement: "#section6", duration: 500, triggerHook: 'onEnter', offset: 200
@@ -94,6 +100,20 @@
                {opacity: 1, left: 0},
                {opacity: 0, left: -300}))
             .addTo(controller);
+         new ScrollMagic.Scene({
+            triggerElement: "#section6", duration: 500, offset: 0
+         }).setTween(TweenMax.fromTo("#magicItem3b", 1,
+               {top: 0},
+               {top: 200})).addTo(controller);
+
+         //# About page
+         new ScrollMagic.Scene({triggerElement: "#ourTeamBlock", triggerHook: 'onEnter'})
+            .setClassToggle(".team-list", "slideInUp animated")
+            .addTo(controller).removeIndicators();
+         new ScrollMagic.Scene({triggerElement: "#ourGoldBlock", triggerHook: 'onEnter'})
+            .setClassToggle("#ourGoldElem", "fadeInDown animated")
+            .addTo(controller).removeIndicators();
+
       }
    });
 })(jQuery);
