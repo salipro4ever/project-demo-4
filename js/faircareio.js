@@ -56,13 +56,13 @@
          new ScrollMagic.Scene({
             triggerElement: "#section4", duration: 500, triggerHook: 'onEnter', offset: 200
          }).setTween(TweenMax.fromTo("#magicItem1", 1,
-               {opacity: 0, left: -300},
-               {opacity: 1, left: 0})).addTo(controller);
+               {opacity: 0, scale: 0.5},
+               {opacity: 1, scale: 1})).addTo(controller);
          new ScrollMagic.Scene({
             triggerElement: "#section4", duration: 400, triggerHook: 'onLeave', offset: 200
          }).setTween(TweenMax.fromTo("#magicItem1", 1,
-               {opacity: 1, scale: 1},
-               {opacity: 0, scale: 0.5})).addTo(controller);
+               {opacity: 1, left: 0},
+               {opacity: 0, left: -300})).addTo(controller);
          // e2
          new ScrollMagic.Scene({
             triggerElement: "#section5", duration: 500, triggerHook: 'onEnter', offset: 200
@@ -80,8 +80,8 @@
          new ScrollMagic.Scene({
             triggerElement: "#section6", duration: 500, triggerHook: 'onEnter', offset: 200
          }).setTween(TweenMax.fromTo("#magicItem3", 1,
-               {opacity: 0, left: -300},
-               {opacity: 1, left: 0}))
+               {opacity: 0, scale: 0.5},
+               {opacity: 1, scale: 1}))
             .addTo(controller);
          new ScrollMagic.Scene({
             triggerElement: "#section6", duration: 400, triggerHook: 'onLeave', offset: 200
@@ -89,6 +89,16 @@
                {opacity: 1, left: 0},
                {opacity: 0, left: -300}))
             .addTo(controller);
+      }
+   });
+})(jQuery);
+
+/* TOME
+ ========================================================*/
+(function($){
+   $(function () {
+      if($('nav').hasClass('scrollme-ok')){
+         $("#toBody").trigger('click');
       }
    });
 })(jQuery);
