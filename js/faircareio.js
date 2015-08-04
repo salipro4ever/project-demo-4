@@ -63,6 +63,11 @@
          }).setTween(TweenMax.fromTo("#magicItem1", 1,
                {opacity: 1, left: 0},
                {opacity: 0, left: -300})).addTo(controller);
+         new ScrollMagic.Scene({
+            triggerElement: "#section4", duration: 500,  offset: 0
+         }).setTween(TweenMax.fromTo("#magicItem1b", 1,
+               { top: 0},
+               { top: 200})).addTo(controller);
          // e2
          new ScrollMagic.Scene({
             triggerElement: "#section5", duration: 500, triggerHook: 'onEnter', offset: 200

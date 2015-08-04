@@ -37,6 +37,12 @@ $main-color:      #4ac0be;
   transition: $args;
 }
 
+@mixin threedots() {
+  white-space: nowrap;
+  overflow:hidden !important;
+  text-overflow: ellipsis;
+}
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
