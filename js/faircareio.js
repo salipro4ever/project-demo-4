@@ -32,7 +32,6 @@
          $('html, body').animate({scrollTop: 0}, 500);
       });
       $("#toBody").click(function () {
-         console.log($('header').offset().top);
          $('html, body').animate({scrollTop: $('.sl-nav').offset().top || 600}, 500);
       });
       setTimeout(function () {
@@ -73,9 +72,8 @@
             new ScrollMagic.Scene({
                triggerElement: "#section5", duration: 500, triggerHook: 'onEnter', offset: 200
             }).setTween(TweenMax.fromTo("#magicItem2", 1,
-                  {opacity: 0, rotation: 180, scale: 0.5},
-                  {opacity: 1, rotation: 360, scale: 1}))
-               .addTo(controller);
+                  {opacity: 0, scale: 0.5},
+                  {opacity: 1, scale: 1})).addTo(controller);
             new ScrollMagic.Scene({
                triggerElement: "#section5", duration: 400, triggerHook: 'onLeave', offset: 200
             }).setTween(TweenMax.fromTo("#magicItem2", 1,

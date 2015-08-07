@@ -433,7 +433,7 @@ hr {
     background-position: center;
     width: 128px;
     height: 128px;
-    @include transition(all .3s ease);
+    @include transition(all .8s ease);
     &.one {
       background-position: 0 0;
     }
