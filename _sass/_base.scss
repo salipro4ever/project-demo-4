@@ -253,7 +253,7 @@ img {
 .btn {
   &.btn-md {
     font-size: 20px;
-    padding: .5em 2em;
+    padding: .6em 2em;
   }
 }
 
@@ -306,7 +306,7 @@ body.has-banner {
 
 .bg-dark {
   background-color: #454f5e !important;
-  color: #C3C3C3;
+  color: inherit;
 }
 
 .p {
@@ -433,7 +433,7 @@ hr {
     background-position: center;
     width: 128px;
     height: 128px;
-    @include transition(all .8s ease);
+    //@include transition(all .8s ease);
     &.one {
       background-position: 0 0;
     }
@@ -588,6 +588,16 @@ hr {
   opacity: 0;
   visibility: hidden;
 }
+.magic-figure {
+  position: fixed;
+  top: 20%;
+  opacity: 0;
+  transform:translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+}
 
 /**************************
 * ABOUT STYLE
@@ -595,6 +605,10 @@ hr {
 * update 02-08-2015
 **************************/
 .team-list {
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
   .team-member {
 
     margin-bottom: 50px;
