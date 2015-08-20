@@ -456,12 +456,7 @@ hr {
     }
   }
 
-  &:hover {
-    //box-shadow: 0 0 10px 0px #CECCCC;
-    //background-color: lighten(#F6F6F6,1);
-    cursor: pointer;
-
-    .feature-icon > span {
+.feature-icon > span:hover {
 
       &.one {
         background-position: -132px 0;
@@ -474,8 +469,6 @@ hr {
       }
 
     }
-
-  }
 }
 
 .section-3 {

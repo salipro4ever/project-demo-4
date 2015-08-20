@@ -7,21 +7,7 @@
 /* PARALLAX
  ========================================================*/
 (function ($) {
-   $(function () {
-      //pararel header
-      var $wd = $(window), $wr = $('#parallax-bg1'), $bh = ($.browser.webkit) ? $('body') : $('html');
-      var tm = $wr.offset() && $wr.offset().top;
-      $wd.bind('scroll.site', function () {
-         var st = $bh.scrollTop() + $wd.height();
-         if (st > (tm + 150)) {
-            var top = -(st - tm) / 5;
-            top = (top > 0) ? 0 : ((top < -200) ? -200 : top);
-            $wr.css({
-               'backgroundPosition': 'center ' + top + 'px'
-            });
-         }
-      }).trigger('scroll.site');
-   });
+   
 })(jQuery);
 
 /* TOTOP
